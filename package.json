@@ -1,0 +1,20 @@
+{
+  "name": "pingbuller",
+  "version": "1.0.0",
+  "description": "full adaptive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lebedev",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-watch": "^4.3.8"
+  }
+}

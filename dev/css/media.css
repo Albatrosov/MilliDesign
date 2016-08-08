@@ -1,0 +1,110 @@
+@media (max-width: 1150px) and (min-width: 768px) {
+  .menu nav li a {
+    padding: 0 6px; }
+  .menu .button {
+    float: right;
+    clear: both;
+    margin-right: 30px; }
+  .price .price__item {
+    margin: 0 1% 70px;
+    width: 30%; }
+  .price .button__price {
+    left: 50%;
+    margin-left: -90px; } }
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .menu .button {
+    float: right;
+    margin-right: 30px;
+    clear: both; }
+  .menu nav ul {
+    display: none; }
+  .menu nav .menu__mobile {
+    display: block;
+    float: right;
+    margin: 10px 20px 0 0; }
+  .menu nav:hover ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: #fff; }
+    .menu nav:hover ul li {
+      text-align: center;
+      float: none; }
+  .menu .contacts .contacts__item p {
+    margin: 5px 5px 0 0; }
+  .menu .contacts .contacts__item i {
+    margin: 5px; }
+  .header-image .header-image__text {
+    padding-top: 100px; }
+  .advantages {
+    left: 10px; }
+    .advantages .advantages__item {
+      width: 30%;
+      margin: 65px 10%; }
+  .portfolio .portfolio__item {
+    width: 40%; }
+  .portfolio .portfolio__item--center {
+    width: 60%; }
+  .price .price__item {
+    margin: 0 1% 70px;
+    width: 30%; }
+    .price .price__item .price__content {
+      width: 95%; }
+      .price .price__item .price__content .price__cost .price__thousands {
+        font-size: 36px; }
+    .price .price__item .button--price {
+      width: 70%;
+      left: 50%;
+      margin-left: -35%; }
+    .price .price__item .button--price-center {
+      width: 70%;
+      left: 50%;
+      margin-left: -35%; } }
+
+@media (max-width: 480px) {
+  main {
+    width: 480px; }
+    main .menu .button {
+      float: right;
+      margin-right: 30px;
+      clear: both; }
+    main .menu nav ul {
+      display: none; }
+    main .menu nav .menu__mobile {
+      display: block;
+      float: right;
+      margin: 10px 30px 0 0; }
+    main .menu nav:hover ul {
+      display: block;
+      position: absolute;
+      right: 0;
+      background-color: #fff; }
+      main .menu nav:hover ul li {
+        text-align: center;
+        float: none; }
+    main .menu .contacts .contacts__item p {
+      margin: 5px 5px 0 0; }
+    main .menu .contacts .contacts__item i {
+      margin: 5px; }
+    main .header-image .header-image__text {
+      padding-top: 100px; }
+    main .portfolio .portfolio__item {
+      width: 30%; }
+    main .portfolio .portfolio__item--center {
+      width: 70%; }
+    main .advantages .advantages__item {
+      margin: 65px 10%; }
+    main .price .price__item {
+      width: 70%;
+      margin: 20px 15%; }
+      main .price .price__item .price__name {
+        font-size: 32px; }
+      main .price .price__item .button--price {
+        width: 70%;
+        left: 50%;
+        margin-left: -35%; }
+      main .price .price__item .button--price-center {
+        width: 70%;
+        left: 50%;
+        margin-left: -35%; } }

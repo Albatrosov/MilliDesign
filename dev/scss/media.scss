@@ -1,0 +1,287 @@
+$button768: 70%;
+
+@media (max-width: 1150px) and (min-width: 768px) {
+    
+    .menu{
+        
+        nav{
+            
+            li{
+            
+                a{
+
+                    padding: 0 6px;
+                }
+            }
+        }
+        
+        .button{
+            
+            float: right;
+            clear: both;
+            margin-right: 30px;
+        }
+    }
+    
+    .price{
+        
+        .price__item{
+            
+            margin: 0 1% 70px;
+            width: 30%;
+        }
+        
+        .button__price{
+
+            left: 50%;
+            margin-left: -90px;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    
+    .menu{
+        
+        .button{
+            
+            float: right;
+            margin-right: 30px;
+            clear: both;
+        }
+        
+        nav{
+            
+            ul{
+                
+                display: none;
+            }
+            
+            .menu__mobile{
+                
+                display: block;
+                float: right;
+                margin: 10px 20px 0 0;
+            }
+        }
+        
+        nav:hover ul{
+            
+            display: block;
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            
+            li{
+                
+                text-align: center;
+                float: none;
+            }
+        }
+        
+        .contacts{
+            
+            .contacts__item{
+                
+                p{
+                
+                    margin: 5px 5px 0 0;
+                }
+
+                i{
+
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    
+    .header-image{
+        
+        .header-image__text{
+            
+            padding-top: 100px;
+        }
+    }
+    
+    .advantages{
+        
+        left: 10px;
+        
+        .advantages__item{
+            
+            width: 30%;
+            margin: 65px 10%;
+        }
+    }
+    
+    .portfolio{
+        
+        .portfolio__item{
+            
+            width: 40%;
+        }
+        
+        .portfolio__item--center{
+            
+            width: 60%;
+        }
+    }
+    
+    .price{
+        
+        .price__item{
+            
+            margin: 0 1% 70px;
+            width: 30%;
+            
+            .price__content{
+                
+                width: 95%;
+                
+                .price__cost{
+                    
+                    .price__thousands{
+                        
+                        font-size: 36px;
+                    }
+                }
+            }
+            
+            .button--price{
+                
+                width: $button768;
+                left: 50%;
+                margin-left: -($button768/2)
+            }
+            
+            .button--price-center{
+                
+                width: $button768;
+                left: 50%;
+                margin-left: -($button768/2)
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    
+    main{
+        
+        width: 480px;
+            
+        .menu{
+
+            .button{
+
+                float: right;
+                margin-right: 30px;
+                clear: both;
+            }
+
+            nav{
+
+                ul{
+
+                    display: none;
+                }
+
+                .menu__mobile{
+
+                    display: block;
+                    float: right;
+                    margin: 10px 30px 0 0;
+                }
+            }
+
+            nav:hover ul{
+
+                display: block;
+                position: absolute;
+                right: 0;
+                background-color: #fff;
+
+                li{
+
+                    text-align: center;
+                    float: none;
+                }
+            }
+
+            .contacts{
+
+                .contacts__item{
+
+                    p{
+
+                        margin: 5px 5px 0 0;
+                    }
+
+                    i{
+
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+        
+        .header-image{
+        
+            .header-image__text{
+
+                padding-top: 100px;
+            }
+        }
+        
+        .portfolio{
+        
+            .portfolio__item{
+
+                width: 30%;
+            }
+
+            .portfolio__item--center{
+
+                width: 70%;
+            }
+        }
+
+        .advantages{
+
+            .advantages__item{
+
+                margin: 65px 10%;
+            }
+        }
+        
+        .price{
+            
+            .price__item{
+                
+                width: 70%;
+                margin: 20px 15%;
+                
+                .price__name{
+                    
+                    font-size: 32px;
+                }
+                
+                .button--price{
+                    
+                    width: $button768;
+                    left: 50%;
+                    margin-left: -($button768/2)
+                }
+                
+                .button--price-center{
+                    
+                    width: $button768;
+                    left: 50%;
+                    margin-left: -($button768/2)
+                }
+            }
+        }
+    }
+    
+}

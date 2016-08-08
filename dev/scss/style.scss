@@ -1,0 +1,520 @@
+@import 'logo';
+@import 'button';
+@import 'titles';
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.modal__bg{
+    
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.modal{
+    
+    position: absolute;
+    margin: 350px 0 0 -175px;
+    left: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 350px;
+    height: 318px;
+    background-color: #fff;
+    
+    fieldset{
+        
+        border: none; 
+        
+        legend{
+            
+            position: absolute;
+            right: -15px;
+            top: -20px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 24px;
+            color: #fff;
+            border-radius: 100%;
+            background: linear-gradient(to top, #5cccae, #34c9e3);
+        }
+    }
+
+    h2{
+
+        padding: 25px 0 20px;
+        font-size: 24px;
+    }
+
+    input{
+
+        width: 290px;
+        height: 35px;
+        margin-bottom: 10px;
+        padding: 15px 0;
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid #eee;
+    }
+
+    .button{
+
+        width: 290px;
+        height: 48px;
+    }
+}
+
+.width-wrapper{
+    
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+.menu{
+    
+    max-width: 1110px;
+    margin: auto;
+    height: 70px;
+    
+    .menu__mobile{
+            
+        display: none;
+        font-size: 30px;
+    }
+    
+    nav{
+        
+        li{
+            
+            float: left;
+            list-style: none;
+            line-height: 68px;
+            
+            i{
+                
+                font-size: 18px;
+                color: #59cbfa;
+            }
+            
+            a{
+                
+                display: block;
+                text-decoration: none;
+                color: #3b3b3b;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 0 20px;
+            }
+            
+            a:hover{
+                
+                background-color: #f5f6f9;
+                border-bottom: 2px solid #59cbfa;
+            }
+        }
+    }
+    
+    .contacts{
+        
+        .contacts__item{
+            
+            p{               
+                
+                float: left;
+                margin-right: 13px;
+                color: #3b3b3b;
+                font: 900 12px / 70px Roboto, Tahoma, sans-serif;
+                text-transform: uppercase;
+            }
+            
+            i{
+                
+                float: left;
+                line-height: 70px;
+                margin: 0 10px 0 5px;
+            }
+        }
+    }
+    
+    
+}
+
+.header-image{
+    
+    width: 100%;
+    height: 730px;
+    background-image: url(../../img/header_BG.png);
+    background-size: cover;
+    color: #fff;
+    
+    .header-image__text{
+        
+        max-width: 900px;
+        margin: 0px auto;
+        padding-top: 230px;
+        text-align: center;
+        
+        h1{
+            
+            font: 900 30px Roboto, Tahoma, sans-serif;
+            text-transform: uppercase;
+        }
+        
+        p{
+            
+            font: 100 40px / 55px Roboto, Tahoma, sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .sale{
+            
+            max-width: 590px;
+            min-height: 80px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, .3);
+            border: 1px solid #fff;
+            
+            p{
+                
+                font: bold 48px / 80px Roboto, Tahoma, sans-serif;
+                text-transform: uppercase;
+            }
+        }
+        
+        .button{
+        
+            width: 200px;
+        }
+    }
+    
+}
+
+.advantages{
+    
+    background-color: #f0f0f2;
+    overflow: hidden;
+       
+    .advantages__item{
+        
+        float: left;
+        width: 21%;
+        margin: 65px 2%;
+        
+        .advantages__image{
+            
+            width: 162px;
+            height: 160px;
+            background: url('../../img/sprite-advantages.png') -1px -1px;
+            margin-bottom: 40px;
+        }
+                
+        .advantages__image--dna:hover{
+            
+            background-position: 0 162px;
+        }
+        
+        .advantages__image--sales{
+            
+            background-position: -162px -1px;
+        }
+        
+        .advantages__image--sales:hover{
+            
+            background-position: -162px 162px;
+        }
+        
+        .advantages__image--key{
+            
+            background-position: -324px -1px;
+        }
+        
+        .advantages__image--key:hover{
+            
+            background-position: -324px 162px;
+        }
+        
+        .advantages__image--guru{
+            
+            background-position: -486px -1px;
+        }
+        
+        .advantages__image--guru:hover{
+            
+            background-position: -486px 162px;
+        }
+                
+        p{
+            
+            width: 170px;
+            color: #3b3b3b;
+            font: 900 16px / 24px Roboto, Tahoma, sans-serif;
+            text-align: center;
+        }
+    }
+}
+
+.portfolio{
+    
+    clear: both;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+        
+    .portfolio__item{
+        
+        position: relative;
+        float: left;
+        width: 20%;
+        margin-top: -5px;
+        
+        img{
+            
+            height: 335px;
+        }
+        
+        .portfolio__hover{
+            
+            display: none;
+        }
+        
+        .portfolio__hover--top{
+            
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(0deg, rgba(92, 204, 174, 0.8) 0%, rgba(52, 201, 227, 0.8) 100%);
+            position: absolute;
+            top: 0;
+            
+            a{
+                
+                display: block;
+                width: 50px;
+                height: 50px;
+                margin: 80px auto;
+                background-color: #ffffff;
+                border-radius: 100%;
+                
+                i{
+                    
+                    line-height: 50px;
+                    margin-left: 14px;
+                    color: #757575;
+                    font-size: 25px;
+                    transform: scale(-1, 1);
+                }
+            }
+        }
+        
+        .portfolio__hover--bottom{
+            
+            background: rgba(240, 240, 242, 0.9);
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            
+            p{
+                
+                color: #333333;
+                font: 400 16px / 24px Roboto, Tahoma, sans-serif;
+                text-align: center;
+                margin-top: 48px;
+            }
+        }
+    }
+    
+    .portfolio__item:hover .portfolio__hover{
+        
+        display: block;
+    }
+    
+    .portfolio__item--center{
+        
+        width: 30%;
+    }
+    
+}
+
+.price{
+    
+    max-width: 1030px;
+    margin: auto;
+        
+    .price__item{
+        
+        position: relative;
+        float: left;
+        width: 270px;
+        margin: 0px 3% 70px;
+        height: 578px;
+        border: 1px solid #f0f0f2;
+        box-sizing: border-box;
+        
+        .price__content{
+            
+            width: 170px;
+            margin: auto;
+        }
+        
+        .price__name{
+                        
+            p{
+                
+                background-color: #f0f0f2;
+                line-height: 100px;
+                text-align: center;
+            }            
+        }
+        
+        
+        .price__cost{
+
+            height: 130px;
+                         
+            .price__thousands{
+
+                display: inline-block;
+                font-size: 46px;
+                font-weight: bold;
+                line-height: 130px;
+                border-bottom: 2px solid #50cbbe;
+            }
+            
+            .price__cost-wrapper{
+                
+                display: inline-block;
+                font-size: 26px;
+            }
+            
+            .price__hundreds{
+                            
+                line-height: 24px;
+            }
+            
+            .price__condition{
+                
+                font-size: 12px;
+                color: #50cbbe;
+            }
+        }
+        
+        .price__text{
+            
+            padding: 30px 0;
+            text-transform: uppercase;
+            color: #3b3b3b;
+            font: 100 14px / 36px Roboto, Tahoma, sans-serif;
+        }
+        
+        .button--price{
+            
+            position: absolute;
+            width: 180px;
+            height: 50px;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -90px;
+            color: #3b3b3b;
+            background: #fff;
+            border: 1px solid #3b3b3b;
+        }
+        
+        .button--price-center{
+            
+            position: absolute;
+            width: 180px;
+            height: 50px;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -90px;
+        }
+    }
+    
+    .price__item--center{
+        
+        height: 620px;
+        
+        .price__name{
+                        
+            p{
+                
+                color: #fff;
+                background: linear-gradient(0deg, #5cccae 0%, #34c9e3 100%);
+            }
+        }
+    }
+    
+    .price__item--side{
+        
+        margin-top: 20px;
+    }
+}
+
+ 
+
+.map{
+    
+    form{
+        
+        position: absolute;
+        margin: -350px 0 0 50px;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 350px;
+        height: 318px;
+        background-color: #fff;
+        
+        h2{
+            
+            padding: 25px 0 20px;
+            font-size: 24px;
+        }
+        
+        input{
+            
+            width: 290px;
+            height: 35px;
+            margin-bottom: 10px;
+            padding: 15px 0;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .button{
+            
+            width: 290px;
+            height: 48px;
+        }
+    }    
+}
+
+.footer{
+    
+    width: 100%;
+    background-color: #f0f0f2;
+    
+    .copyright{
+        
+        float: right;
+        
+        p{
+            
+            font: 300 12px / 70px Roboto, Tahoma, sans-serif;
+        }
+    }
+}
+
+
+@import 'media';

@@ -1,0 +1,26 @@
+.logo{
+        
+    float: left;
+    margin-right: 5px;
+    line-height: 70px;
+
+    .logo__text{
+
+        font: 400 22px Oswald;
+        text-transform: uppercase;
+        margin: 10px 0 -30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .logo__text--green{
+
+        color: #50cbbe;
+    }
+
+    p{
+
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,25 @@
+.button{
+        
+    width: 232px;
+    height: 48px;
+    margin-top: 11px;
+    color: #fff;
+    background: linear-gradient(to top, #5cccae, #34c9e3);
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 0;
+}
+
+.button:hover{
+    
+    background: linear-gradient(to top, #5bccaf, #5bccaf);
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+.button:not(:hover){
+
+    transition: all .3s ease;
+}
